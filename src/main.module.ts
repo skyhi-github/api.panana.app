@@ -1,12 +1,13 @@
 import { Module } from '@nestjs/common';
-import { UsersModule } from './users/users.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [UsersModule,
+  imports: [
     ServeStaticModule.forRoot({
     rootPath: join(__dirname, '..', 'public')
-  })],
+  }),
+    UsersModule],
 })
 export class MainModule {}
