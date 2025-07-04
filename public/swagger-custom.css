@@ -1,0 +1,27 @@
+.swagger-ui .topbar-wrapper img[alt="Swagger UI"] {
+  display: none;
+}
+
+.swagger-ui .topbar-wrapper .link {
+  display: none !important;
+}
+
+.swagger-ui .swagger-ui .footer {
+  display: none !important;
+}
+
+.swagger-ui .version {
+  display: none !important;
+}
+
+.swagger-ui .info .title::before {
+  content: "";
+  display: inline-block;
+  background-image: url('panana.png');  /* your image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;   /* adjust size as needed */
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 5px; /* optional background color */
+}
